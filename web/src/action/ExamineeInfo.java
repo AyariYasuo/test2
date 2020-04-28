@@ -25,7 +25,7 @@ public class ExamineeInfo {
 
 		    //読み込みファイルのインスタンス生成
 		    //ファイル名を指定する
-		    fi = new FileInputStream("/Users/yasuoayari/Desktop/clientInfo.csv");
+		    fi = new FileInputStream("/Users/yasuoayari/Desktop/Test/TestResult.csv");
 		    is = new InputStreamReader(fi);
 		    br = new BufferedReader(is);
 
@@ -37,7 +37,7 @@ public class ExamineeInfo {
 		    //1行ずつ読み込みを行う
 		    while ((line = br.readLine()) != null) {
 		      //先頭行は列名
-		      if (i != 0) {
+		      if (i > 1) {
 
 		        //カンマで分割した内容を配列に格納する
 		        String[] data = line.split(",");
@@ -47,7 +47,7 @@ public class ExamineeInfo {
 		        ExamineeInfo.put("time",data[2]);
 		        ExamineeInfo.put("name",data[3]);
 		        ExamineeInfo.put("gender",data[4]);
-		        ExamineeInfo.put("birth",data[5]);
+		        ExamineeInfo.put("birth",data[5].replace("-","/"));
 		        ExamineeInfo.put("edu",data[6]);
 		        ExamineeInfo.put("status",data[7]);
 		        ExamineeInfo.put("answersNum1",data[8]);

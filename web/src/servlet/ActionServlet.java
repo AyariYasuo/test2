@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import action.Chart;
 import action.ExamineeInfo;
+import action.FileDownload;
 
 /**
  * Servlet implementation class ActionServlet
@@ -95,6 +96,12 @@ public class ActionServlet extends HttpServlet {
             	examineeInfo = Chart.chart(examineeInfoList, request.getParameter("examineeId"));
             	request.setAttribute("ExamineeInfo", examineeInfo);
                 url = "/chart.jsp";
+                break;
+            case "download":
+            	FileDownload.fileDownload(response);
+            	request.setAttribute("ExamineeInfoList", examineeInfoList);
+            	request.setAttribute("flg", "1");
+                url = "/examineeInfo.jsp";
                 break;
             default:
             	url = "/chart.jsp";

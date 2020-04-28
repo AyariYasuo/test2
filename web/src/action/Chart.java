@@ -19,7 +19,7 @@ public class Chart {
 		}
 		// 年齢の計算
 		SimpleDateFormat sdFormat = new SimpleDateFormat("yyyy/MM/dd");
-        Date birth = sdFormat.parse((String) examineeInfo.get("birth"));
+        Date birth = sdFormat.parse((String)examineeInfo.get("birth"));
 		examineeInfo.put("age",calcAge(birth) + "歳");
 		// 受験日
         Date date = sdFormat.parse((String) examineeInfo.get("time"));
