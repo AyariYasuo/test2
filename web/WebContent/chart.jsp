@@ -106,6 +106,10 @@
 <tr><td>&nbsp&nbsp4&nbsp&nbsp</td><td>数理的素養に長ける</td><td>数、論理を扱う能力が偏って高い</td><td>&nbsp&nbsp4&nbsp&nbsp</td><td>遅いが正確</td><td>一つ一つの解答は遅いが正確である</td></tr>
 <tr><td>&nbsp&nbsp5&nbsp&nbsp</td><td>言語要素に長ける</td><td>言語を扱う基礎能力が偏って高い</td><td>&nbsp&nbsp5&nbsp&nbsp</td><td>不正確だが速い</td><td>解答に間違いは散見されるが、解答量は多い</td></tr>
 </table>
+<br>
+<form>
+<button type="submit" class="btn btn-success" name="action" value="examineeInfo">戻る</button>
+</form>
 </div>
 <div style="position:absolute; top:35px; left:807px;">
 <table class="table6" style="color:#ffffff">
