@@ -2,6 +2,7 @@ package action;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -85,8 +86,10 @@ public class ExamineeInfo {
 
 		    }
 
+		  } catch (FileNotFoundException e) {
+			  return ExamineeInfoList;
 		  } catch (Exception e) {
-		    e.printStackTrace();
+			  e.printStackTrace();
 		  } finally {
 		    try {
 		      br.close();

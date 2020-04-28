@@ -72,21 +72,29 @@ public class ActionServlet extends HttpServlet {
         String url = null;
 
         if(action==null || action=="") {
-        	url = "/top.jsp";
+        	url = "/chart.jsp";
         }else {
         	switch(action){
             case "examineeInfo":
             	examineeInfoList = ExamineeInfo.ExamineeInfoGet();
             	request.setAttribute("ExamineeInfoList", examineeInfoList);
+            	request.setAttribute("flg", "1");
                 url = "/examineeInfo.jsp";
                 break;
             case "chart":
+            	if(request.getParameter("examineeId")==null || request.getParameter("examineeId").equals("")){
+                	request.setAttribute("ExamineeInfoList", examineeInfoList);
+                	request.setAttribute("flg", "1");
+                	request.setAttribute("err", "受験者を選択してください");
+            		url = "/examineeInfo.jsp";
+                    break;
+            	}
             	examineeInfo = Chart.chart(examineeInfoList, request.getParameter("examineeId"));
             	request.setAttribute("ExamineeInfo", examineeInfo);
                 url = "/chart.jsp";
                 break;
             default:
-            	url = "/top.jsp";
+            	url = "/chart.jsp";
                 break;
         	}
         }

@@ -5,7 +5,9 @@
 <%@ page import="java.util.HashMap"%>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.Map"%>
-<% List<Map<String,Object>> examineeInfoList = (List<Map<String,Object>>)request.getAttribute("ExamineeInfoList"); %>
+<% List<Map<String,Object>> examineeInfoList =  (List<Map<String,Object>>)request.getAttribute("ExamineeInfoList"); %>
+<% String flg = (String)request.getAttribute("flg"); %>
+<% String err = (String)request.getAttribute("err"); %>
 <html>
 <head>
 <title>受験者一覧</title>
@@ -27,7 +29,7 @@
 <form action="ActionServlet" method="post">
     <table class="table1">
         <tr>
-            <th></th>
+            <th style="color:#ffffff">◯</th>
             <th>タイムスタンプ</th>
             <th>受験者名</th>
             <th>性別</th>
@@ -35,6 +37,7 @@
             <th>最終学歴</th>
             <th>現在の状態</th>
         </tr>
+        <% if (flg!=null && flg.equals("1")) {%>
         <% for (Map<String,Object> examineeInfo: examineeInfoList) {%>
         <tr>
         	<td><input type="radio" name="examineeId" value="<%=examineeInfo.get("examineeId")%>"></td>
@@ -46,8 +49,13 @@
             <td><label for="info"><%=examineeInfo.get("status")%></label></td>
         </tr>
         <%} %>
+        <%} %>
     </table>
-
+    <% if (err!=null && !err.equals("")) {%>
+        <font color="red" size="2"><%=err%></font>
+    <%}%>
+<br>
+<button type="submit" class="btn btn-success" name="action" value="examineeInfo">受験者一覧読み込み</button>
 <button type="submit" class="btn btn-success" name="action" value="chart">診断表</button><br>
 </form>
 </div>
