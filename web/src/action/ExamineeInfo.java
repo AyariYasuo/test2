@@ -92,7 +92,9 @@ public class ExamineeInfo {
 			  e.printStackTrace();
 		  } finally {
 		    try {
-		      br.close();
+		    	if(br!=null){
+		    		br.close();
+		    	}
 		    } catch (Exception e) {
 		      e.printStackTrace();
 		    }

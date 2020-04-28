@@ -77,6 +77,9 @@ public class ActionServlet extends HttpServlet {
         	switch(action){
             case "examineeInfo":
             	examineeInfoList = ExamineeInfo.ExamineeInfoGet();
+            	if(examineeInfoList==null || examineeInfoList.size() == 0){
+                	request.setAttribute("err", "受験者情報が存在しません");
+            	}
             	request.setAttribute("ExamineeInfoList", examineeInfoList);
             	request.setAttribute("flg", "1");
                 url = "/examineeInfo.jsp";
