@@ -10,6 +10,7 @@
 <% String err = (String)request.getAttribute("err"); %>
 <html>
 <head>
+<jsp:include page="common.jsp" flush="true" />
 <title>受験者一覧</title>
 <style>
   .table1 {
@@ -27,6 +28,7 @@
 <h1>受験者一覧</h1>
 
 <form action="ActionServlet" method="post">
+    <% if (flg!=null && flg.equals("1")) {%>
     <table class="table1">
         <tr>
             <th style="color:#ffffff">◯</th>
@@ -37,10 +39,9 @@
             <th>最終学歴</th>
             <th>現在の状態</th>
         </tr>
-        <% if (flg!=null && flg.equals("1")) {%>
         <% for (Map<String,Object> examineeInfo: examineeInfoList) {%>
         <tr>
-        	<td><input type="radio" name="examineeId" value="<%=examineeInfo.get("examineeId")%>"></td>
+        	<td align="center"><input type="radio" name="examineeId" value="<%=examineeInfo.get("examineeId")%>"></td>
             <td><label for="info"><%=examineeInfo.get("time")%></label></td>
             <td><label for="info"><%=examineeInfo.get("name")%></label></td>
             <td><label for="info"><%=examineeInfo.get("gender")%></label></td>
@@ -56,6 +57,7 @@
     <%}%>
 <br>
 <button type="submit" class="btn btn-success" name="action" value="examineeInfo">受験者一覧読み込み</button>
+<button type="submit" class="btn btn-success" name="action" value="download">解答結果</button>
 <button type="submit" class="btn btn-success" name="action" value="chart">診断表</button><br>
 </form>
 </div>

@@ -10,11 +10,11 @@
 <style>
 .table1, .table2, .table11 {
   border-collapse: collapse;
-  width: 1000px;
+  width: 800px;
 }
 .table6, .table7 {
   border-collapse: collapse;
-  width: 400px;
+  width: 240px;
 }
 .table1 th, .table1 td, .table3 th, .table4 th, .table4 td, .table7 th {
   border: 1px solid gray;
@@ -22,16 +22,20 @@
 }
 .table11 th, .table11 td{
   border: 1px solid gray;
+  font-size: xx-small;
 }
 .table1 th, .table4 th, .table7 th, .table11 th {
   background-color: #F2F2F2;
+  font-size: xx-small;
 }
 .table2 th, .table6 th {
   background-color: gray;
-}
+  text-align: center;
+  font-size: x-small;
+  }
 .table3 {
   border-collapse: collapse;
-  width: 1400px;
+  width: 1047px;
 }
 .table4 {
   border-collapse: collapse;
@@ -40,16 +44,16 @@
 }
 </style>
 <head>
-  <meta charset="utf-8">
-　<title>診断表</title>
+<jsp:include page="common.jsp" flush="true" />
+<title>診断表</title>
 </head>
 <body>
-<div style="position:absolute; top:5px;">
+<div style="position:absolute; top:5px; left:1px;">
 <table class="table3">
 <th>診断表</th>
 </table>
 </div>
-<div style="position:absolute; top:35px;">
+<div style="position:absolute; top:35px; left:1px;">
 <table class="table1">
 <th>氏名</th><td><%=examineeInfo.get("name")%></td>
 <th>受験日</th><td><%=examineeInfo.get("date")%></td>
@@ -82,7 +86,6 @@
 </td>
 </tr>
 </table>
-<br>
 <table class="table2" style="color:#ffffff">
 <tr><th>個別能力測定</th></tr>
 </table>
@@ -95,17 +98,16 @@
 <tr><td align="center">テスト3<br>（言語推論）</td><td>複数の言葉が持つ関係性を推測できるかどうか、語彙が豊富かどうか</td><td align="center"><%=examineeInfo.get("answersNum3")%></td><td align="center"><%=examineeInfo.get("correctNum3")%></td><td align="center"><%=examineeInfo.get("correctRate3")%></td><td align="center">-</td></tr>
 <tr><td align="center">テスト4<br>（数列）</td><td>数を用いた一定のルールを見つけることができるかどうか</td><td align="center"><%=examineeInfo.get("answersNum4")%></td><td align="center"><%=examineeInfo.get("correctNum4")%></td><td align="center"><%=examineeInfo.get("correctRate4")%></td><td align="center">-</td></tr>
 </table>
-<br><br>
 <table class="table11">
 <tr><th colspan="3">■評価Ⅰ　基礎能力（言語・数理）の特徴</th><th colspan="3">■評価Ⅱ　解答の量と正確さ</th></tr>
-<tr><td>1</td><td>基礎能力が高い</td><td>偏りはなく同室集団の中では基礎能力は高い</td><td>1</td><td>速くて正確</td><td>解答量も多く、解答した内容も正確で、<br>能力は高い</td></tr>
-<tr><td>2</td><td>標準</td><td>能力は標準で、特に偏りもない</td><td>2</td><td>標準</td><td>解答量、正答率ともに標準で、<br>目立った特徴はない</td></tr>
-<tr><td>3</td><td>基礎能力が低い</td><td>全体的に正答数が少なく、<br>基礎能力は平均的に低い</td><td>3</td><td>遅くて不正確</td><td>全体的に解答量は少ない、またその正答率も低い</td></tr>
-<tr><td>4</td><td>数理的素養に長ける</td><td>数、論理を扱う能力が偏って高い</td><td>4</td><td>遅いが正確</td><td>一つ一つの解答は遅いが正確である</td></tr>
-<tr><td>5</td><td>言語要素に長ける</td><td>言語を扱う基礎能力が偏って高い</td><td>5</td><td>不正確だが速い</td><td>解答に間違いは散見されるが、解答量は多い</td></tr>
+<tr><td>&nbsp&nbsp1&nbsp&nbsp</td><td>基礎能力が高い</td><td>偏りはなく同室集団の中では基礎能力は高い</td><td>&nbsp&nbsp1&nbsp&nbsp</td><td>速くて正確</td><td>解答量も多く、解答した内容も正確で、<br>能力は高い</td></tr>
+<tr><td>&nbsp&nbsp2&nbsp&nbsp</td><td>標準</td><td>能力は標準で、特に偏りもない</td><td>&nbsp&nbsp2&nbsp&nbsp</td><td>標準</td><td>解答量、正答率ともに標準で、<br>目立った特徴はない</td></tr>
+<tr><td>&nbsp&nbsp3&nbsp&nbsp</td><td>基礎能力が低い</td><td>全体的に正答数が少なく、<br>基礎能力は平均的に低い</td><td>&nbsp&nbsp3&nbsp&nbsp</td><td>遅くて不正確</td><td>全体的に解答量は少ない、またその正答率も低い</td></tr>
+<tr><td>&nbsp&nbsp4&nbsp&nbsp</td><td>数理的素養に長ける</td><td>数、論理を扱う能力が偏って高い</td><td>&nbsp&nbsp4&nbsp&nbsp</td><td>遅いが正確</td><td>一つ一つの解答は遅いが正確である</td></tr>
+<tr><td>&nbsp&nbsp5&nbsp&nbsp</td><td>言語要素に長ける</td><td>言語を扱う基礎能力が偏って高い</td><td>&nbsp&nbsp5&nbsp&nbsp</td><td>不正確だが速い</td><td>解答に間違いは散見されるが、解答量は多い</td></tr>
 </table>
 </div>
-<div style="position:absolute; top:35px; left:1007px;">
+<div style="position:absolute; top:35px; left:807px;">
 <table class="table6" style="color:#ffffff">
 <th>能力評価票</th>
 </table>
@@ -113,43 +115,43 @@
 <th>■評価Ⅰ　基礎能力（言語・数理）の特徴</th>
 </table>
 </div>
-<div style="position:absolute; top:500px; left:1007px;">
+<div style="position:absolute; top:310px; left:807px;">
 <table class="table7">
 <th>■評価Ⅱ　解答の量と正確さ</th>
 </table>
 </div>
-<div style="position:absolute; top:105px; left:1042px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:80px; left:840px; width:200px; height:5px; font-size:5pt; color:gray;">
 数理的要素に長ける
 </div>
-<div style="position:absolute; top:105px; left:1315px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:80px; left:973px; width:200px; height:5px; font-size:5pt; color:gray;">
 基礎能力が高い
 </div>
-<div style="position:absolute; top:440px; left:1042px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:270px; left:840px; width:200px; height:5px; font-size:5pt; color:gray;">
 基礎能力が低い
 </div>
-<div style="position:absolute; top:440px; left:1295px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:270px; left:973px; width:200px; height:5px; font-size:5pt; color:gray;">
 言語的能力に長ける
 </div>
-<div style="position:absolute; top:270px; left:1205px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:177px; left:930px; width:200px; height:5px; font-size:5pt; color:gray;">
 標準
 </div>
 
-<div style="position:absolute; top:540px; left:1045px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:340px; left:846px; width:200px; height:5px; font-size:5pt; color:gray;">
 遅いが正確
 </div>
-<div style="position:absolute; top:540px; left:1335px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:340px; left:976px; width:200px; height:5px; font-size:5pt; color:gray;">
 速くて正確
 </div>
-<div style="position:absolute; top:880px; left:1045px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:530px; left:846px; width:200px; height:5px; font-size:5pt; color:gray;">
 遅くて不正確
 </div>
-<div style="position:absolute; top:880px; left:1310px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:530px; left:976px; width:200px; height:5px; font-size:5pt; color:gray;">
 不正確だが速い
 </div>
-<div style="position:absolute; top:710px; left:1205px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:435px; left:930px; width:200px; height:5px; font-size:5pt; color:gray;">
 標準
 </div>
-<div style="position:absolute; top:90px; left:1007px; width:400px; height:400px;">
+<div style="position:absolute; top:70px; left:807px; width:240px; height:240px;">
   <canvas id="myLineChart"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
@@ -199,7 +201,7 @@
   </script>
   </div>
 
-  <div style="position:absolute; top:530px; left:1007px; width:400px; height:400px;">
+  <div style="position:absolute; top:330px; left:807px; width:240px; height:240px;">
   <canvas id="myLineChart2"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 

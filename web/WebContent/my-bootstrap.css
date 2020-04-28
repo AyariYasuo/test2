@@ -1,0 +1,15 @@
+h4 {
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid #228b22;
+  border-bottom: 1px solid #228b22;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+h6 {
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid #228b22;
+  border-bottom: 1px solid #ccc;
+}
