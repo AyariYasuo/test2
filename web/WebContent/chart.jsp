@@ -14,7 +14,7 @@
 }
 .table6, .table7 {
   border-collapse: collapse;
-  width: 240px;
+  width: 270px;
 }
 .table1 th, .table1 td, .table3 th, .table4 th, .table4 td, .table7 th {
   border: 1px solid gray;
@@ -35,7 +35,7 @@
   }
 .table3 {
   border-collapse: collapse;
-  width: 1047px;
+  width: 1070px;
 }
 .table4 {
   border-collapse: collapse;
@@ -86,6 +86,7 @@
 </td>
 </tr>
 </table>
+<br>
 <table class="table2" style="color:#ffffff">
 <tr><th>個別能力測定</th></tr>
 </table>
@@ -114,7 +115,7 @@
 </form>
 </div>
 </div>
-<div style="position:absolute; top:35px; left:807px;">
+<div style="position:absolute; top:35px; left:800px;">
 <table class="table6" style="color:#ffffff">
 <th>能力評価票</th>
 </table>
@@ -122,7 +123,7 @@
 <th>■評価Ⅰ　基礎能力（言語・数理）の特徴</th>
 </table>
 </div>
-<div style="position:absolute; top:310px; left:807px;">
+<div style="position:absolute; top:345px; left:800px;">
 <table class="table7">
 <th>■評価Ⅱ　解答の量と正確さ</th>
 </table>
@@ -130,35 +131,35 @@
 <div style="position:absolute; top:80px; left:840px; width:200px; height:5px; font-size:5pt; color:gray;">
 数理的要素に長ける
 </div>
-<div style="position:absolute; top:80px; left:973px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:80px; left:995px; width:200px; height:5px; font-size:5pt; color:gray;">
 基礎能力が高い
 </div>
-<div style="position:absolute; top:270px; left:840px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:300px; left:840px; width:200px; height:5px; font-size:5pt; color:gray;">
 基礎能力が低い
 </div>
-<div style="position:absolute; top:270px; left:973px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:300px; left:975px; width:200px; height:5px; font-size:5pt; color:gray;">
 言語的能力に長ける
 </div>
-<div style="position:absolute; top:177px; left:930px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:190px; left:940px; width:200px; height:5px; font-size:5pt; color:gray;">
 標準
 </div>
 
-<div style="position:absolute; top:340px; left:846px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:380px; left:846px; width:200px; height:5px; font-size:5pt; color:gray;">
 遅いが正確
 </div>
-<div style="position:absolute; top:340px; left:976px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:380px; left:1015px; width:200px; height:5px; font-size:5pt; color:gray;">
 速くて正確
 </div>
-<div style="position:absolute; top:530px; left:846px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:595px; left:846px; width:200px; height:5px; font-size:5pt; color:gray;">
 遅くて不正確
 </div>
-<div style="position:absolute; top:530px; left:976px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:595px; left:997px; width:200px; height:5px; font-size:5pt; color:gray;">
 不正確だが速い
 </div>
-<div style="position:absolute; top:435px; left:930px; width:200px; height:5px; font-size:5pt; color:gray;">
+<div style="position:absolute; top:490px; left:945px; width:200px; height:5px; font-size:5pt; color:gray;">
 標準
 </div>
-<div style="position:absolute; top:70px; left:807px; width:240px; height:240px;">
+<div style="position:absolute; top:73px; left:807px; width:270px; height:270px;">
   <canvas id="myLineChart"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
@@ -208,7 +209,7 @@
   </script>
   </div>
 
-  <div style="position:absolute; top:330px; left:807px; width:240px; height:240px;">
+  <div style="position:absolute; top:370px; left:807px; width:270px; height:270px;">
   <canvas id="myLineChart2"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
