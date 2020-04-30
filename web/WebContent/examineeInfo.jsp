@@ -26,11 +26,14 @@
 <div class="container">
 <div class="col-9 ml-7">
 <h1>受験者一覧</h1>
-
 <form action="ActionServlet" method="post">
 <button type="submit" class="btn btn-success" name="action" value="examineeInfo">受験者一覧読み込み</button>
 <button type="submit" class="btn btn-success" name="action" value="download">解答結果</button>
 <button type="submit" class="btn btn-success" name="action" value="chart">診断表</button><br>
+    <% if (err!=null && !err.equals("")) {%>
+        <font color="red" size="2"><%=err%></font>
+    <%}%>
+    <br>
     <% if (flg!=null && flg.equals("1")) {%>
     <table class="table1">
         <tr>
@@ -55,9 +58,6 @@
         <%} %>
         <%} %>
     </table>
-    <% if (err!=null && !err.equals("")) {%>
-        <font color="red" size="2"><%=err%></font>
-    <%}%>
 <br>
 </form>
 </div>
