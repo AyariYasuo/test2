@@ -28,6 +28,10 @@
   text-align: center;
   font-size: x-small;
   }
+ .td-css {
+  border: 1px solid black;
+  border-style:none;
+  }
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -97,11 +101,11 @@
 <br>
 <table class="table11" width="100%" style="table-layout: auto;">
 <tr><th colspan="3">■評価Ⅰ　基礎能力（言語・数理）の特徴</th><th colspan="3">■評価Ⅱ　解答の量と正確さ</th></tr>
-<tr><td>&nbsp&nbsp1&nbsp&nbsp</td><td>基礎能力が高い</td><td>偏りはなく同室集団の中では基礎能力は高い</td><td>&nbsp&nbsp1&nbsp&nbsp</td><td>速くて正確</td><td>解答量も多く、解答した内容も正確で、能力は高い</td></tr>
-<tr><td>&nbsp&nbsp2&nbsp&nbsp</td><td>標準</td><td>能力は標準で、特に偏りもない</td><td>&nbsp&nbsp2&nbsp&nbsp</td><td>標準</td><td>解答量、正答率ともに標準で、目立った特徴はない</td></tr>
-<tr><td>&nbsp&nbsp3&nbsp&nbsp</td><td>基礎能力が低い</td><td>全体的に正答数が少なく、基礎能力は平均的に低い</td><td>&nbsp&nbsp3&nbsp&nbsp</td><td>遅くて不正確</td><td>全体的に解答量は少ない、またその正答率も低い</td></tr>
-<tr><td>&nbsp&nbsp4&nbsp&nbsp</td><td>数理的素養に長ける</td><td>数、論理を扱う能力が偏って高い</td><td>&nbsp&nbsp4&nbsp&nbsp</td><td>遅いが正確</td><td>一つ一つの解答は遅いが正確である</td></tr>
-<tr><td>&nbsp&nbsp5&nbsp&nbsp</td><td>言語要素に長ける</td><td>言語を扱う基礎能力が偏って高い</td><td>&nbsp&nbsp5&nbsp&nbsp</td><td>不正確だが速い</td><td>解答に間違いは散見されるが、解答量は多い</td></tr>
+<tr><td>&nbsp&nbsp1&nbsp&nbsp<br>&nbsp</td><td>基礎能力が高い</td><td>偏りはなく同室集団の中では基礎能力は高い</td><td>&nbsp&nbsp1&nbsp&nbsp<br>&nbsp</td><td>速くて正確</td><td>解答量も多く、解答した内容も正確で、能力は高い</td></tr>
+<tr><td>&nbsp&nbsp2&nbsp&nbsp<br>&nbsp</td><td>標準</td><td>能力は標準で、特に偏りもない</td><td>&nbsp&nbsp2&nbsp&nbsp<br>&nbsp</td><td>標準</td><td>解答量、正答率ともに標準で、目立った特徴はない</td></tr>
+<tr><td>&nbsp&nbsp3&nbsp&nbsp<br>&nbsp</td><td>基礎能力が低い</td><td>全体的に正答数が少なく、基礎能力は平均的に低い</td><td>&nbsp&nbsp3&nbsp&nbsp<br>&nbsp</td><td>遅くて不正確</td><td>全体的に解答量は少ない、またその正答率も低い</td></tr>
+<tr><td>&nbsp&nbsp4&nbsp&nbsp<br>&nbsp</td><td>数理的素養に長ける</td><td>数、論理を扱う能力が偏って高い</td><td>&nbsp&nbsp4&nbsp&nbsp<br>&nbsp</td><td>遅いが正確</td><td>一つ一つの解答は遅いが正確である</td></tr>
+<tr><td>&nbsp&nbsp5&nbsp&nbsp<br>&nbsp</td><td>言語要素に長ける</td><td>言語を扱う基礎能力が偏って高い</td><td>&nbsp&nbsp5&nbsp&nbsp<br>&nbsp</td><td>不正確だが速い</td><td>解答に間違いは散見されるが、解答量は多い</td></tr>
 </table>
 <br>
 </div>
