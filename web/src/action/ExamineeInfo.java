@@ -26,7 +26,7 @@ public class ExamineeInfo {
 
 		    //読み込みファイルのインスタンス生成
 		    //ファイル名を指定する
-		    fi = new FileInputStream("/Users/yasuoayari/Desktop/Test/TestResult.csv");
+		    fi = new FileInputStream("/Test/TestResult.csv");
 		    is = new InputStreamReader(fi);
 		    br = new BufferedReader(is);
 

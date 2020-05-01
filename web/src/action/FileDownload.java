@@ -23,7 +23,7 @@ public class FileDownload {
 
 		try {
 			// ダウンロード対象ファイルのFileオブジェクトを生成
-			File file = new File("/Users/yasuoayari/Desktop/clientInfo.csv");
+			File file = new File("/Test/OriginalTestResult.csv");
 
 			if (!file.exists() || !file.isFile()) {
 				// ファイルが存在しない場合のエラー処理
