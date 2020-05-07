@@ -128,38 +128,38 @@ function printWeb() {
 </table>
 <br>
 </div>
-<div style="position:absolute; top:70px; right:297px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div class="col-lg-4" class="example">
+<div  style="position:absolute; top:40px; text-align:right;  width:100%; height:5px; font-size:8pt; color:gray;">
 数理的要素に長ける
 </div>
-<div style="position:absolute; top:70px; right:110px; width:200px; height:5px; font-size:8pt; color:gray;">
-基礎能力が高い
+<div style="position:absolute; top:40px;  text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp基礎能力が高い
 </div>
-<div style="position:absolute; top:320px; right:297px; width:200px; height:5px; font-size:8pt; color:gray;">
-基礎能力が低い
+<div style="position:absolute; top:290px; text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp基礎能力が低い
 </div>
-<div style="position:absolute; top:320px; right:130px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:290px; text-align:right;  width:100%;  height:5px; font-size:8pt; color:gray;">
 言語的能力に長ける
 </div>
-<div style="position:absolute; top:195px; right:180px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:165px; text-align:center;  width:100%;  height:5px; font-size:8pt; color:gray;">
 標準
 </div>
-<div style="position:absolute; top:395px; right:290px; width:200px; height:5px; font-size:8pt; color:gray;">
-遅いが正確
+<div style="position:absolute; top:365px; text-align:right;  width:100%;  height:5px; font-size:8pt; color:gray;">
+遅いが正確&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </div>
-<div style="position:absolute; top:395px; right:90px; width:200px; height:5px; font-size:8pt; color:gray;">
-速くて正確
+<div style="position:absolute; top:365px; text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp速くて正確
 </div>
-<div style="position:absolute; top:645px; right:290px; width:200px; height:5px; font-size:8pt; color:gray;">
-遅くて不正確
+<div style="position:absolute; top:615px; text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp遅くて不正確
 </div>
-<div style="position:absolute; top:645px; right:110px; width:200px; height:5px; font-size:8pt; color:gray;">
-不正確だが速い
+<div style="position:absolute; top:615px; text-align:right;  width:100%;  height:5px; font-size:8pt; color:gray;">
+不正確だが速い&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </div>
-<div style="position:absolute; top:520px; right:180px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:490px; text-align:center;  width:100%;  height:5px; font-size:8pt; color:gray;">
 標準
 </div>
 
-<div class="col-lg-4" class="example">
 <table class="table6" style="color:#ffffff" width="100%" style="table-layout: auto;">
 <tr><th>能力評価票</th><tr>
 </table >
