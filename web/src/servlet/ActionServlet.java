@@ -105,7 +105,10 @@ public class ActionServlet extends HttpServlet {
                 url = "/chart.jsp";
                 break;
             case "download":
-            	FileDownload.fileDownload(response);
+            	String err = FileDownload.fileDownload(response);
+            	if(err != null && err.equals("1")){
+            		request.setAttribute("err", "解答結果のダウンロードができませんでした");
+            	}
             	request.setAttribute("ExamineeInfoList", examineeInfoList);
             	request.setAttribute("flg", "1");
                 url = "/examineeInfo.jsp";

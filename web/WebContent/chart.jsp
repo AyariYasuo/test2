@@ -58,14 +58,6 @@ function printWeb() {
         size: A4 landscape;
         margin: 0;
     }
-    @media print {
-		body {
-			top:0 !IMPORTANT;
-			left:0 !IMPORTANT;
-			width:172mm !IMPORTANT;
-			height:251mm !IMPORTANT;
-		}
-	}
 </style>
 <title>診断表</title>
 </head>

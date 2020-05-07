@@ -2,17 +2,16 @@ package action;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 
 import javax.servlet.http.HttpServletResponse;
 
 public class FileDownload {
-	public static HttpServletResponse fileDownload(HttpServletResponse response){
+	public static String fileDownload(HttpServletResponse response){
+		String err = null;
 		// ダウンロード対象ファイルの読み込み用オブジェクト
 		FileInputStream fis = null;
 		InputStreamReader isr = null;
@@ -25,14 +24,16 @@ public class FileDownload {
 			// ダウンロード対象ファイルのFileオブジェクトを生成
 			File file = new File("/Test/OriginalTestResult.csv");
 
+			// ファイル存在チェック
 			if (!file.exists() || !file.isFile()) {
-				// ファイルが存在しない場合のエラー処理
+				err = "1";
+				return err;
 			}
 
 			// レスポンスオブジェクトのヘッダー情報を設定
 			response.setContentType("application/octet-stream");
 			response.setHeader("Content-Disposition", "attachment; filename=" +
-				new String("clientInfo.csv".getBytes("Windows-31J"), "ISO-8859-1"));
+				new String("OriginalTestResult.csv".getBytes("Windows-31J"), "ISO-8859-1"));
 
 			// ダウンロード対象ファイルの読み込み用オブジェクトを生成
 			fis = new FileInputStream(file);
@@ -47,12 +48,9 @@ public class FileDownload {
 			while ((i = isr.read()) != -1) {
 				osw.write(i);
 			}
-		} catch (FileNotFoundException e) {
-			// 例外発生時処理
-		} catch (UnsupportedEncodingException e) {
-			// 例外発生時処理
 		} catch (IOException e) {
-			// 例外発生時処理
+			err = "1";
+			return err;
 		} finally {
 			try {
 				// 各オブジェクトを忘れずにクローズ
@@ -69,9 +67,10 @@ public class FileDownload {
 					fis.close();
 				}
 			} catch (IOException e) {
-				// 例外発生時処理
+				err = "1";
+				return err;
 			}
 		}
-		return response;
+		return err;
 	}
 }
