@@ -44,10 +44,30 @@
     display: flex;
     flex-wrap: wrap;
   }
-}
 </style>
+<script type="text/javascript">
+function printWeb() {
+    print();
+}
+</script>
 <head>
 <jsp:include page="common.jsp" flush="true" />
+<style type="text/css" media="print">
+	.noprint {display: none;}
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+    @media print {
+		body {
+			-webkit-print-color-adjust: exact;
+			top:0 !IMPORTANT;
+			left:0 !IMPORTANT;
+			width:200mm !IMPORTANT;
+			height:290mm !IMPORTANT;
+		}
+	}
+</style>
 <title>診断表</title>
 </head>
 <body>
@@ -109,8 +129,39 @@
 </table>
 <br>
 </div>
+<div style="position:absolute; top:70px; left:870px; width:200px; height:5px; font-size:8pt; color:gray;">
+数理的要素に長ける
+</div>
+<div style="position:absolute; top:70px; left:1057px; width:200px; height:5px; font-size:8pt; color:gray;">
+基礎能力が高い
+</div>
+<div style="position:absolute; top:320px; left:870px; width:200px; height:5px; font-size:8pt; color:gray;">
+基礎能力が低い
+</div>
+<div style="position:absolute; top:320px; left:1037px; width:200px; height:5px; font-size:8pt; color:gray;">
+言語的能力に長ける
+</div>
+<div style="position:absolute; top:195px; left:990px; width:200px; height:5px; font-size:8pt; color:gray;">
+標準
+</div>
+
+<div style="position:absolute; top:395px; left:875px; width:200px; height:5px; font-size:8pt; color:gray;">
+遅いが正確
+</div>
+<div style="position:absolute; top:395px; left:1077px; width:200px; height:5px; font-size:8pt; color:gray;">
+速くて正確
+</div>
+<div style="position:absolute; top:645px; left:875px; width:200px; height:5px; font-size:8pt; color:gray;">
+遅くて不正確
+</div>
+<div style="position:absolute; top:645px; left:1057px; width:200px; height:5px; font-size:8pt; color:gray;">
+不正確だが速い
+</div>
+<div style="position:absolute; top:520px; left:995px; width:200px; height:5px; font-size:8pt; color:gray;">
+標準
+</div>
+
 <div class="col-lg-4" class="example">
-<!-- <div style="position:absolute; width:277px; height:277px;"> -->
 <table class="table6" style="color:#ffffff" width="100%" style="table-layout: auto;">
 <tr><th>能力評価票</th><tr>
 </table >
@@ -141,10 +192,6 @@
       },
       scales: {
         xAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: '言語的能力'
-          },
           ticks: {
             suggestedMax: 80,
             suggestedMin: 20,
@@ -155,10 +202,6 @@
           }
         }],
         yAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: '数理的要素'
-          },
           ticks: {
             suggestedMax: 80,
             suggestedMin: 20,
@@ -199,10 +242,6 @@
       },
       scales: {
         xAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: '速さ'
-          },
           ticks: {
             suggestedMax: 80,
             suggestedMin: 20,
@@ -213,10 +252,6 @@
           }
         }],
         yAxes: [{
-          scaleLabel: {
-              display: true,
-              labelString: '正確さ'
-          },
           ticks: {
             suggestedMax: 100.00,
             suggestedMin: 70.00,
@@ -233,7 +268,8 @@
 </div>
 </div>
 <form>
-<button type="submit" class="btn btn-success" name="action" value="examineeInfo">戻る</button>
+<button type="submit" class="btn btn-success noprint" name="action" value="examineeInfo">戻る</button>
+<input type="button" class="btn btn-success noprint" value="印刷" onClick="printWeb()" onclick="printWindow()">
 </form>
 </div>
 </body>

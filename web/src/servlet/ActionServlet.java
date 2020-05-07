@@ -94,6 +94,13 @@ public class ActionServlet extends HttpServlet {
                     break;
             	}
             	examineeInfo = Chart.chart(examineeInfoList, request.getParameter("examineeId"));
+            	if(examineeInfo.get("err") !=null && examineeInfo.get("err").equals("1")){
+            		request.setAttribute("ExamineeInfoList", examineeInfoList);
+                	request.setAttribute("flg", "1");
+                	request.setAttribute("err", "データが不正のため、診断表を表示できません");
+                	url = "/examineeInfo.jsp";
+                    break;
+            	}
             	request.setAttribute("ExamineeInfo", examineeInfo);
                 url = "/chart.jsp";
                 break;
