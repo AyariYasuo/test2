@@ -15,7 +15,7 @@
 <style>
   .table1 {
     border-collapse: collapse;
-    width: 700px;
+    width: 1000px;
   }
   .table1 th, .table1 td {
     border: 1px solid gray;
@@ -24,7 +24,6 @@
 </head>
 <body>
 <div class="container">
-<div class="col-9 ml-7">
 <h1>受験者一覧</h1>
 <form action="ActionServlet" method="post">
 <button type="submit" class="btn btn-success" name="action" value="examineeInfo">受験者一覧読み込み</button>
@@ -60,7 +59,6 @@
     </table>
 <br>
 </form>
-</div>
 </div>
 </body>
 </html>
