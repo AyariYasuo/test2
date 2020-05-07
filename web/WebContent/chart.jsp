@@ -143,7 +143,6 @@ function printWeb() {
 <div style="position:absolute; top:195px; right:180px; width:200px; height:5px; font-size:8pt; color:gray;">
 標準
 </div>
-
 <div style="position:absolute; top:395px; right:290px; width:200px; height:5px; font-size:8pt; color:gray;">
 遅いが正確
 </div>
