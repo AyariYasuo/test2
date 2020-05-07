@@ -15,7 +15,7 @@
 <style>
   .table1 {
     border-collapse: collapse;
-    width: 1000px;
+    	width: 1000px;
   }
   .table1 th, .table1 td {
     border: 1px solid gray;
