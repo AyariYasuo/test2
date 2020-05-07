@@ -44,7 +44,7 @@ public class Chart {
 				examineeInfo.put("eval","不正確");
 			}
 
-		} catch (ParseException e) {
+		} catch (ParseException | NumberFormatException e) {
 			examineeInfo.put("err", "1");
 		}
 
