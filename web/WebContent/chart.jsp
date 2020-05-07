@@ -60,11 +60,10 @@ function printWeb() {
     }
     @media print {
 		body {
-			-webkit-print-color-adjust: exact;
 			top:0 !IMPORTANT;
 			left:0 !IMPORTANT;
-			width:200mm !IMPORTANT;
-			height:290mm !IMPORTANT;
+			width:172mm !IMPORTANT;
+			height:251mm !IMPORTANT;
 		}
 	}
 </style>
@@ -132,13 +131,13 @@ function printWeb() {
 <div style="position:absolute; top:70px; left:870px; width:200px; height:5px; font-size:8pt; color:gray;">
 数理的要素に長ける
 </div>
-<div style="position:absolute; top:70px; left:1057px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:70px; right:110px; width:200px; height:5px; font-size:8pt; color:gray;">
 基礎能力が高い
 </div>
 <div style="position:absolute; top:320px; left:870px; width:200px; height:5px; font-size:8pt; color:gray;">
 基礎能力が低い
 </div>
-<div style="position:absolute; top:320px; left:1037px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:320px; right:130px; width:200px; height:5px; font-size:8pt; color:gray;">
 言語的能力に長ける
 </div>
 <div style="position:absolute; top:195px; left:990px; width:200px; height:5px; font-size:8pt; color:gray;">
@@ -148,13 +147,13 @@ function printWeb() {
 <div style="position:absolute; top:395px; left:875px; width:200px; height:5px; font-size:8pt; color:gray;">
 遅いが正確
 </div>
-<div style="position:absolute; top:395px; left:1077px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:395px; right:90px; width:200px; height:5px; font-size:8pt; color:gray;">
 速くて正確
 </div>
 <div style="position:absolute; top:645px; left:875px; width:200px; height:5px; font-size:8pt; color:gray;">
 遅くて不正確
 </div>
-<div style="position:absolute; top:645px; left:1057px; width:200px; height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:645px; right:110px; width:200px; height:5px; font-size:8pt; color:gray;">
 不正確だが速い
 </div>
 <div style="position:absolute; top:520px; left:995px; width:200px; height:5px; font-size:8pt; color:gray;">
