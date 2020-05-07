@@ -129,35 +129,35 @@ function printWeb() {
 <br>
 </div>
 <div class="col-lg-4" class="example">
-<div  style="position:absolute; top:40px; text-align:right;  width:100%; height:5px; font-size:8pt; color:gray;">
-数理的要素に長ける
+<div  style="position:absolute; top:40px; text-align:left;  width:100%; height:5px; font-size:7pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数理的要素に長ける
 </div>
-<div style="position:absolute; top:40px;  text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp基礎能力が高い
+<div style="position:absolute; top:40px;  text-align:right;  width:100%;  height:5px; font-size:7pt; color:gray;">
+基礎能力が高い&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </div>
-<div style="position:absolute; top:290px; text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
+<div style="position:absolute; top:265px; text-align:left;  width:100%;  height:5px; font-size:7pt; color:gray;">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp基礎能力が低い
 </div>
-<div style="position:absolute; top:290px; text-align:right;  width:100%;  height:5px; font-size:8pt; color:gray;">
-言語的能力に長ける
+<div style="position:absolute; top:265px; text-align:right;  width:100%;  height:5px; font-size:7pt; color:gray;">
+言語的能力に長ける&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </div>
-<div style="position:absolute; top:165px; text-align:center;  width:100%;  height:5px; font-size:8pt; color:gray;">
-標準
+<div style="position:absolute; top:155px; text-align:center;  width:100%;  height:5px; font-size:7pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp標準
 </div>
-<div style="position:absolute; top:365px; text-align:right;  width:100%;  height:5px; font-size:8pt; color:gray;">
-遅いが正確&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div style="position:absolute; top:330px; text-align:left;  width:100%;  height:5px; font-size:7pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp遅いが正確
 </div>
-<div style="position:absolute; top:365px; text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp速くて正確
+<div style="position:absolute; top:330px; text-align:right;  width:100%;  height:5px; font-size:7pt; color:gray;">
+速くて正確&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </div>
-<div style="position:absolute; top:615px; text-align:left;  width:100%;  height:5px; font-size:8pt; color:gray;">
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp遅くて不正確
+<div style="position:absolute; top:555px; text-align:left;  width:100%;  height:5px; font-size:7pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp遅くて不正確
 </div>
-<div style="position:absolute; top:615px; text-align:right;  width:100%;  height:5px; font-size:8pt; color:gray;">
-不正確だが速い&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div style="position:absolute; top:555px; text-align:right;  width:100%;  height:5px; font-size:7pt; color:gray;">
+不正確だが速い&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 </div>
-<div style="position:absolute; top:490px; text-align:center;  width:100%;  height:5px; font-size:8pt; color:gray;">
-標準
+<div style="position:absolute; top:445px; text-align:center;  width:100%;  height:5px; font-size:7pt; color:gray;">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp標準
 </div>
 
 <table class="table6" style="color:#ffffff" width="100%" style="table-layout: auto;">
@@ -171,8 +171,8 @@ function printWeb() {
 
   <script>
   var ctx = document.getElementById('myLineChart').getContext('2d');
-  ctx.canvas.height = 1;
-  ctx.canvas.width = 1;
+  ctx.canvas.height = 9;
+  ctx.canvas.width = 10;
   var myLineChart = new Chart(ctx, {
     type: 'scatter',
     data: {
@@ -221,8 +221,8 @@ function printWeb() {
 
   <script>
   var ctx = document.getElementById('myLineChart2').getContext('2d');
-  ctx.canvas.height = 1;
-  ctx.canvas.width = 1;
+  ctx.canvas.height = 9;
+  ctx.canvas.width = 10;
   var myLineChart = new Chart(ctx, {
     type: 'scatter',
     data: {
