@@ -43,6 +43,7 @@
             <th>誕生日</th>
             <th>最終学歴</th>
             <th>現在の状態</th>
+            <th>受験回数</th>
         </tr>
         <% for (Map<String,Object> examineeInfo: examineeInfoList) {%>
         <tr>
@@ -53,6 +54,7 @@
             <td><label for="info"><%=examineeInfo.get("birth")%></label></td>
             <td><label for="info"><%=examineeInfo.get("edu")%></label></td>
             <td><label for="info"><%=examineeInfo.get("status")%></label></td>
+            <td><label for="info"><%=examineeInfo.get("numOfExaminations")%></label></td>
         </tr>
         <%} %>
         <%} %>

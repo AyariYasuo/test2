@@ -77,6 +77,7 @@ public class ExamineeInfo {
 		        ExamineeInfo.put("conScoreAns",data[33]);
 		        ExamineeInfo.put("conScoreCor",data[35]);
 		        ExamineeInfo.put("correctRate",data[36]);
+		        ExamineeInfo.put("numOfExaminations",data[37]);
 
 		        ExamineeInfoList.add(ExamineeInfo);
 
