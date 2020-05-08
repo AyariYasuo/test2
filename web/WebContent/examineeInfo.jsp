@@ -19,6 +19,7 @@
   }
   .table1 th, .table1 td {
     border: 1px solid gray;
+    font-size: x-small;
   }
 </style>
 </head>
